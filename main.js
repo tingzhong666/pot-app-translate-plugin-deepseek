@@ -2,7 +2,11 @@ async function translate(text, from, to, options) {
     const { config, utils } = options;
     const { tauriFetch: fetch } = utils;
     
-    let { apiKey, model = "deepseek-v4-flash", systemPrompt } = config;
+    let { 
+        apiKey, 
+        model = "deepseek-v4-flash", 
+        systemPrompt = "You are a professional translation engine, please translate the text into a colloquial, professional, elegant and fluent content, without the style of machine translation. You must only translate the text content, never interpret it." 
+    } = config;
     
     // 设置默认请求路径
     const requestPath = "https://api.deepseek.com/chat/completions";

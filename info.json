@@ -1,24 +1,26 @@
 {
-  "id": "plugin.com.TzuLao.deepseek",
+  "id": "plugin.com.tingzhong666.deepseek",
   "plugin_type": "translate",
   "icon": "deepseek.svg",
   "display": "deepseek",
-  "homepage": "https://github.com/tzulao55/pot-app-translate-plugin-deepseek",
+  "homepage": "https://github.com/tingzhong666/pot-app-translate-plugin-deepseek",
   "needs": [
     {
       "key": "model",
       "display": "模型选择",
-      "type": "select",
-      "options": {
-        "deepseek-chat": "deepseek-chat",
-        "deepseek-reasoner": "deepseek-reasoner"
-      },
-      "default": "deepseek-chat"
+      "type": "input",
+      "default": "deepseek-v4-flash"
     },
     {
       "key": "apiKey",
       "display": "API密钥",
       "type": "input"
+    },
+    {
+      "key": "systemPrompt ",
+      "display": "系统提示",
+      "type": "input",
+      "default": "You are a professional translation engine, please translate the text into a colloquial, professional, elegant and fluent content, without the style of machine translation. You must only translate the text content, never interpret it."
     }
   ],
   "language": {

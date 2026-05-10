@@ -10,7 +10,8 @@ DeepSeek翻译插件 - 一个为pot-app开发的翻译插件
 - [deepseek API开放平台](https://platform.deepseek.com/usage)- 需要在DeepSeek官网申请API密钥
 
 ## 功能特点
-- 支持两种模型选择：deepseek-chat和deepseek-reasoner
+- 支持模型选择模型手动输入
+- 支持自定义prompt
 - 支持多种语言之间的互译
 - 提供专业、流畅的翻译结果
 
